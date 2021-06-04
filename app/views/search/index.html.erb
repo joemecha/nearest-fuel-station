@@ -1,16 +1,13 @@
-<section>
-  <section class="navbar-header">
-    <p class="navbar-title">Nearest Fuel Station</p>
-    <p class="navbar-subtitle">The Nearest Electric Charging Station</p>
-  </section>
-  <section class="search-results">
-    <p><%= @station.name %></p>
-    <p><%= @station.address %></p>
-    <p><%= @station.fuel_type %></p>
-    <p><%= @station.access_times %></p>
-  </section>
-  <section class="directions">
-    <p><%= @directions.distance %></p>
-    <p><%= @directions.directions %></p>
-  </section>
+<h1>Nearest Fuel Station</h1>
+
+<section class="nearest-station">
+  <p><%= @station.name %></p>
+  <p><%= @station.address %></p>
+  <p><%= @station.fuel_type %></p>
+  <p><%= @station.access_times %></p>
+</section>
+<section class="directions">
+  <p><%= @route.distance %></p>
+  <p><%= @route.travel_time %></p>
+  <p><%= @route.directions %></p>
 </section>
