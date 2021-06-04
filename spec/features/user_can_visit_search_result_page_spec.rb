@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "user can visit the search page" do
   before :each do 
     visit '/'
-    select('Griffin Coffee', :from => "Location")
+    select 'Griffin Coffee', :from => 'Location'
     click_on 'Find Nearest Station'
   end
   scenario "and see the closest electric fuel station to me" do
